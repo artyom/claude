@@ -1,4 +1,4 @@
-# Containerized Claude Code
+# Containerized Claude Code Package
 
 The Dockerfile in this repository builds a container image that can be used to run Claude Code isolated from the main system, and backed by AWS Bedrock.
 
@@ -12,7 +12,7 @@ Example call:
 container run --rm -it \
 	-e AWS_BEARER_TOKEN_BEDROCK=$(bedrock-api-key) \
 	-v ${PWD}:/home/ubuntu/code \
-	ghcr.io/artyom/claude:latest
+	ghcr.io/artyom/cccp:latest
 ```
 
 Note that:
